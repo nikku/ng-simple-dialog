@@ -36,8 +36,8 @@ function MyController($scope, ngSimpleDialog) {
       scope: data
     });
 
-    dialog.open().on('close', function(resultValue) {
-      data.resultValue = resultValue
+    dialog.open(function(resultValue) {
+      data.resultValue = resultValue;
     });
   };
 }
